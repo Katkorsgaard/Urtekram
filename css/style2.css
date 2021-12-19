@@ -1,0 +1,303 @@
+head
+
+/*udseende samt placering til burgermenu*/
+.menu{
+  color:white;
+  text-decoration: none;
+  font-size: 120%;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+
+
+/*placering*/
+  position: absolute;
+  left:4%;
+  top: 5%;
+}
+
+.menumob{
+  color:black;
+  text-decoration: none;
+  font-size: 120%;
+  z-index: 1;
+
+/*placering*/
+  position: absolute;
+  left:9%;
+  top: 5%;
+}
+
+
+
+/*placering af logo*/
+.logo{
+  position: absolute;
+right:26%;
+top:-5%;
+width:35%;
+z-index: 1;
+}
+
+.logomob{
+  position: absolute;
+right:34%;
+top:-7%;
+width:45%;
+z-index: 1;
+}
+
+
+
+/* position af menupunkter samt kasse */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.1); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  height: 11%;
+  padding: px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+
+
+}
+/*udseende til menu punkter inde i mobmenu*/
+.menupunkter{
+  color:White;
+  font-family: 'Raleway', sans-serif;
+  position: inherit;
+  top:98%;
+  z-index: 2;
+  text-decoration: none;
+  float: left;
+  margin:2%;
+  margin-right: 5%;
+
+}
+
+/* repsonsiv mobil udseende af menupunkter*/
+
+.bg-textmob {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.0); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: lighter;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 55%;
+  height: 15%;
+  padding: 5px;
+  text-align: left;
+  float: left;
+  letter-spacing: 3px;
+  line-height:20px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+}
+
+.menupunktermob{
+  color:grey;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  position: center;
+  top:15%;
+  bottom:20%;
+  font-size: 80%;
+  line-height:3.5;
+  z-index: 2;
+  text-decoration: none;
+  float: left;
+  margin:2%;
+  margin-right: 5%;
+
+}
+
+
+/*mob menu udseende slut*/
+
+
+body {
+  background-color: #c6e8cc;
+  z-index: -1;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.pasta1{
+  position: relative;
+  right:-48%;
+  width: 90%;
+  top:-320px;
+  z-index: -1;
+}
+
+.pastamob1{
+  position: relative;
+  right:9%;
+  width: 200%;
+  height: 280%;
+  top:-430px;
+  z-index: -1;
+}
+
+.nu{
+  position: absolute;
+  right:42%;
+  width: 80%;
+  height: 80%;
+  top:30%;
+  z-index: -1;
+}
+
+.numob{
+  position: absolute;
+  right:-17%;
+  width: 160%;
+  height: 70%;
+  top:34%;
+  z-index: -1;
+}
+
+/* Responsive mobil*/
+@media screen and (max-width: 600px){
+  .logo{
+    display: none
+  }
+
+  .logomob{
+    display:block;
+  }
+
+  .logotablet{
+    display: none;
+  }
+
+
+  }
+
+
+/* Responsive layout lodret - tablet*/
+@media only screen and (min-width: 600px){
+
+/*logo*/
+  .logomob{
+    display: none;
+  }
+
+  .logo{
+    display:block;
+  }
+
+/*pasta tegning*/
+  .pastamob{
+    display: none;
+  }
+
+  .pasta{
+    display:block;
+  }}
+
+/*pastamaskine tegning*/
+  .numob{
+    display: block;
+  }
+
+  .nu{
+    display:none;
+  }
+
+  .bg-textmob{
+    display: block;
+  }
+
+  .bg-text{
+    display:none;
+  }
+
+  .menupunktermob{
+    display: block;
+  }
+
+  .menupunkter{
+    display:none;
+  }
+  .img{
+    display: none;
+  }
+  .menu{
+  display:none;
+  }
+  .menumob{
+  display: block;
+  }
+
+/* Responsive layout - storskærm*/
+@media screen and (min-width: 1200px) {
+
+  .logo{
+    display:block;
+  }
+  .logomob{
+    display: none;
+  }
+
+  /*pasta tegning*/
+    .pastamob{
+      display: block;
+    }
+
+    .pasta{
+      display:none;
+    }
+
+  /*pastamaskine tegning*/
+    .numob{
+      display: none;
+    }
+
+    .nu{
+      display:block;
+    }
+
+    .bg-textmob{
+      display: none;
+    }
+
+    .bg-text{
+      display:block;
+    }
+
+    .menupunktermob{
+      display: none;
+    }
+
+    .menupunkter{
+      display:block;
+    }
+
+.img{
+  display: none;}
+
+  .menu{
+  display:block;
+  }
+  .menumob{
+  display: none;
+  }
+}

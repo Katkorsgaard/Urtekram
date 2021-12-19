@@ -1,0 +1,136 @@
+/*udseende samt placering til burgermenu*/
+
+.menu{
+  color:white;
+  text-decoration: none;
+  font-size: 120%;
+  z-index: 1;
+
+/*placering*/
+  position: absolute;
+  left:4%;
+  top: 5%;
+}
+
+.menumob{
+  color:white;
+  text-decoration: none;
+  font-size: 120%;
+  z-index: 1;
+
+/*placering*/
+  position: absolute;
+  left:9%;
+  top: 5%;
+}
+
+.menupunkter{
+  color:white;
+position: inherit;
+  right:80%;
+  margin:20px;
+top:70%;
+text-decoration: none;
+}
+
+/*placering af logo*/
+.logo{
+position: absolute;
+right:28%;
+top:-3%;
+width:45%;
+height: 50%;
+z-index: 1;
+}
+
+/*logo mobil*/
+.logomob {
+margin-left: 22%;
+margin-top: -11%;
+}
+
+body {
+  background-color: #c7e6c5;
+  z-index: -1;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.deltagelse{
+  position: absolute;
+right:318px;
+top:65px;
+}
+
+.deltagelsemob{
+  position: absolute;
+  right:-18%;
+  top:10%;
+}
+
+/*HER BEGYNDER: Responsiv udseende til diverse enheder*/
+
+/* Responsive mobil*/
+@media screen and (max-width: 600px){
+  .logo{
+    display: none
+  }
+
+  .logomob{
+    display:block;
+  }
+
+.menu{
+  color:black;
+}
+.menu{
+display:none;
+}
+.menumob{
+display: block;
+}
+
+.deltagelse{
+  display:none;
+
+}
+
+.deltagelsemob{
+  display: block;
+
+}
+
+  }
+
+
+
+/* Responsive layout - storskærm*/
+@media screen and (min-width: 1200px) {
+
+  .logo{
+    display:block;
+  }
+  .logomob{
+    display: none;
+}
+  .menu{
+  display:block;
+  }
+  .menumob{
+  display: none;
+  }
+
+  .deltagelse{
+    display:block;
+
+  }
+
+  .deltagelsemob{
+    display: none;
+
+  }
+}
